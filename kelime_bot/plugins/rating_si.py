@@ -7,7 +7,7 @@ from pyrogram.types import Message
 @Client.on_message(filters.command("skor"))
 async def ratingsa(c:Client, m:Message):
     global rating
-    metin = """📝 Küresel Grup Derecelendirmesi :
+    metin = """📝 Qolobal Qrup Dərəcləndirilməsi :
 
 """
     eklenen = 0
