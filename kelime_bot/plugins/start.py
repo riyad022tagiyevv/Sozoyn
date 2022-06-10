@@ -28,7 +28,7 @@ START = """
 
 HELP = """
 **✌️ Komutlar Menüsüne Hoşgeldiniz.**
-/game - Oyunu başlatmak için..
+/oyun - Oyunu başlatmak için..
 /kec - Üç adet hakkınız mevcut, oyunu geçmek için.. 
 /reytinq - Oyuncular arasındaki rekabet bilgisi..
 /cancel - Oyundan çıkmak için gerekli olan komuttur.. 
@@ -44,7 +44,7 @@ async def help(bot, message):
   await message.reply_photo("https://i.ibb.co/K6QTywd/images-17.jpg",caption=HELP) 
 
 # Oyunu başlat. 
-@Client.on_message(filters.command("game")) 
+@Client.on_message(filters.command("oyun")) 
 async def kelimeoyun(c:Client, m:Message):
     global oyun
     aktif = False
