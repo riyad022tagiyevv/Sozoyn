@@ -30,7 +30,7 @@ HELP = """
 **✌️ Komutlar Menüsüne Hoşgeldiniz.**
 /game - Oyunu başlatmak için..
 /kec - Üç adet hakkınız mevcut, oyunu geçmek için.. 
-/skor - Oyuncular arasındaki rekabet bilgisi..
+/reytinq - Oyuncular arasındaki rekabet bilgisi..
 /cancel - Oyundan çıkmak için gerekli olan komuttur.. 
 """
 
