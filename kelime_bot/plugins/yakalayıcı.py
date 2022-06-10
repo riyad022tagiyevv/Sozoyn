@@ -22,7 +22,7 @@ async def buldu(c:Client, m:Message):
     try:
         if m.chat.id in oyun:
             if m.text.lower() == oyun[m.chat.id]["kelime"]:
-                await c.send_message(m.chat.id,f"✨ Tebrikler !\n**{m.from_user.mention}** \n**<code>{oyun[m.chat.id]['kelime']}</code>** , Sözünü Buldu ✅")
+                await c.send_message(m.chat.id,f"✨ Təbriklər !\n**{m.from_user.mention}** \n**<code>{oyun[m.chat.id]['kelime']}</code>** , Sözünü Buldu ✅")
                 if f"{m.from_user.mention}" in rating:
                     rating[f"{m.from_user.mention}"] += 1
                 else:
@@ -60,7 +60,7 @@ async def buldu(c:Client, m:Message):
                 text = f"""
 🎯 Raund : {oyun[m.chat.id]['round']}/60 
 📝 Söz :   <code>{kelime_list}</code>
-💰 Kazandığınız Puan: 1
+💰 Qazandığınız Puan: 1
 🔎 İpucu: 1. {oyun[m.chat.id]["kelime"][0]}
 ✍🏻 Uzunluk : {int(len(kelime_list)/2)} 
 
