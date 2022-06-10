@@ -11,17 +11,17 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 keyboard = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("➕ Grubuna Ekle", url=f"http://t.me/KelimeHazinesiBot?startgroup=new")
+        InlineKeyboardButton("➕ Grubuna Ekle", url=f"http://t.me/Karabakhsozbot?startgroup=new")
     ],
     [
-        InlineKeyboardButton("🇹🇷 Sahibim", url="https://t.me/nevarevladim"),
-        InlineKeyboardButton("💬 Chat", url="https://t.me/+0kf_3zSzsCszZWJk"),
+        InlineKeyboardButton("🇹🇷 Sahibim", url="https://t.me/thagiyevvvv"),
+        InlineKeyboardButton("💬 Chat", url="https://t.me/karabakhteamm"),
     ]
 ])
 
 
 START = """
-**🔮 Merhaba, Kelimeleri tersten bulma oyununa hoş geldin..**
+**🔮 Salan, Sözləri tərsdən tapma oyununa xoş gəldin..**
 
 ➤ Bilgi için 👉 /help Tıklayın. Komutlar kolay ve basittir. 
 """
@@ -29,7 +29,7 @@ START = """
 HELP = """
 **✌️ Komutlar Menüsüne Hoşgeldiniz.**
 /game - Oyunu başlatmak için..
-/pass - Üç adet hakkınız mevcut, oyunu geçmek için.. 
+/kec - Üç adet hakkınız mevcut, oyunu geçmek için.. 
 /skor - Oyuncular arasındaki rekabet bilgisi..
 /cancel - Oyundan çıkmak için gerekli olan komuttur.. 
 """
@@ -62,7 +62,7 @@ async def kelimeoyun(c:Client, m:Message):
         oyun[m.chat.id] = {"kelime":kelime_sec()}
         oyun[m.chat.id]["aktif"] = True
         oyun[m.chat.id]["round"] = 1
-        oyun[m.chat.id]["pass"] = 0
+        oyun[m.chat.id]["kec"] = 0
         oyun[m.chat.id]["oyuncular"] = {}
         
         kelime_list = ""
@@ -79,7 +79,7 @@ async def kelimeoyun(c:Client, m:Message):
 🔎 İpucu: 1. {oyun[m.chat.id]["kelime"][0]}
 ✍🏻 Uzunluk : {int(len(kelime_list)/2)} 
 
-✏️ Karışık harflerden doğru kelimeyi bulun
+✏️ Qarışıq hərflərdən doğru kelimeyi bulun
         """
         await c.send_message(m.chat.id, text)
         
